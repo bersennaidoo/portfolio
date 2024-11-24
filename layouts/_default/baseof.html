@@ -3,11 +3,9 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
-  <div class="container-fluid">
+<body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
     {{ partial "header.html" . }}
     {{ block "main" . }}{{ end }}
     {{ partial "footer.html" . }}
-  </div>
 </body>
 </html>

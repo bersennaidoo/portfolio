@@ -1,6 +1,6 @@
 baseURL: "https://example.org/"
 languageCode: "en-us"
-title: "HiTime Airport Company"
+title: "My Portfolio"
 enableEmoji: true
 
 markup:

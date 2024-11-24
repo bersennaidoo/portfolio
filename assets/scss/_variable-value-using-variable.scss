@@ -9,19 +9,21 @@ $custom-colors: (
   "primary-700": lighten($primary, 30%),
   "primary-800": lighten($primary, 20%),
   "primary-900": lighten($primary, 10%),
+  "primary-1000": darken($primary, 100%),
+
 );
 
 // Merge custom theme
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Body Styles
-$body-bg: darken(#fff, 2%);
-$body-color: darken(#fff, 80%);
+$body-bg: lighten(#766f57, 50%);
+$body-color: darken(#766f57, 100%);
 
 // Basic typography styles
 $font-family-base: "Roboto", sans-serif;
-$font-size-base: 1.1rem;
-$line-height-base: 1.3;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
 $line-height-sm: 1;
 // Link styles
 $link-color: $info;
@@ -30,12 +32,12 @@ $link-hover-color: shift-color($link-color, $link-shade-percentage);
 $link-hover-decoration: underline;
 
 //heading
-$h1-font-size: 2.027rem;
-$h2-font-size: 1.802rem;
-$h3-font-size: 1.602rem;
-$h4-font-size: 1.424rem;
-$h5-font-size: 1.266rem;
-$h6-font-size: 1.125rem;
+$h1-font-size: $font-size-base * 2.027;
+$h2-font-size: $font-size-base * 1.802;
+$h3-font-size: $font-size-base * 1.602;
+$h4-font-size: $font-size-base * 1.424;
+$h5-font-size: $font-size-base * 1.266;
+$h6-font-size: $font-size-base * 1.125;
 $headings-font-weight: $font-weight-bold;
 $headings-line-height: $line-height-sm;
 $headings-margin-bottom: $spacer;
